@@ -1,6 +1,8 @@
+const secret = process.env.JWT_SECRET as string;
+
 export default {
   jwt: {
-    secret: process.env.JWT_SECRET as string,
-    expiresIn: '1d'
-  }
-}
+    secret,
+    expiresIn: "1d",
+  },
+};
